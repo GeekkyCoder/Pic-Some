@@ -7,7 +7,7 @@
 * React Router, useContext , useEffect, useState, useRef 
 
 ## Images
-![PicSome][PickSome.png][PickSome](./images/PickSome.png)
+![GitHub Logo](/src/images/PickSome.png)
 
 ## Pic Some Features
 * User can select product of their choice.
