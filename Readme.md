@@ -7,7 +7,7 @@
 * React Router, useContext , useEffect, useState, useRef 
 
 ## Images
-[PickSome](./images/PickSome.png)
+![PicSome][PickSome.png][PickSome](./images/PickSome.png)
 
 ## Pic Some Features
 * User can select product of their choice.
