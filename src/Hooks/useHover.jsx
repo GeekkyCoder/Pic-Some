@@ -17,11 +17,11 @@ function useHover() {
     imgRef.current.addEventListener("mouseenter", mouseEnter);
     imgRef.current.addEventListener("mouseleave", mouseLeave);
 
-    return () => {
-      console.log("removing....");
-      imgRef.current.removeEventListener("mouseenter", mouseEnter);
-      imgRef.current.removeEventListener("mouseleave", mouseLeave);
-    };
+    // return () => {
+    //   console.log("removing....");
+    //   imgRef.current.removeEventListener("mouseenter", mouseEnter);
+    //   imgRef.current.removeEventListener("mouseleave", mouseLeave);
+    // };
   }, []);
 
   return { hovered, imgRef };

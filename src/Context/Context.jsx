@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from "react"
-
+import { useHover } from "../Hooks/useHover"
 const Context = React.createContext()
 
 
@@ -21,10 +21,23 @@ function ContextProvider(props){
     }
 
     function addToCart(imgId){
+    
      const cartItem = allPhotos.find(photo=> photo.id === imgId) 
      setCartItems(prevCartItems=> {
         return [...prevCartItems, cartItem]
      })
+    }
+
+    function removeFromCart(imgId){
+        setCartItems(prevCartItems=> {
+            return prevCartItems.filter(cartItem=> cartItem.id !== imgId)
+        })
+    }
+
+    function deleteItem(imgId){
+        setCartItems(prevCartItems=> {
+            return prevCartItems.filter(cartItem=> cartItem.id !== imgId)
+        })
     }
 
     useEffect(()=> {
@@ -48,6 +61,7 @@ function ContextProvider(props){
             allPhotos,
             handleFavorite,
             addToCart,
+            removeFromCart,
             cartItem
          }}>
             {props.children}
