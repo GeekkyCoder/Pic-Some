@@ -8,8 +8,6 @@ function Image({ img, className }) {
     useContext(Context);
   const { imgRef } = useHover();
 
-  console.log(imgRef);
-
   function heartIcon() {
     if (img.isFavorite) {
       return (

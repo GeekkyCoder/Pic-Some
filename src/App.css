@@ -24,6 +24,7 @@ main.photos {
 
 main.cart-page {
   padding: 10px;
+  position: relative;
 }
 
 .cart-page > h1 {
@@ -40,7 +41,7 @@ main.cart-page {
   justify-content: center;
 }
 
-.cart-item-count{
+.cart-item-count {
   position: absolute;
   right: 4%;
   top: 16%;
@@ -154,4 +155,29 @@ a:hover {
 }
 a:active {
   color: var(--light-blue);
+}
+
+.btn {
+  padding: 0.5em 1em;
+  background: black;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
+  width: 171px;
+  position: absolute;
+  top: 100%;
+  left: 45%;
+  border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+  .cart-item-count {
+    right: 11%;
+  }
+
+  .btn {
+    width: 140px;
+    left: 30%;
+  }
 }
