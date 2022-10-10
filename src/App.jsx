@@ -1,18 +1,17 @@
 import "./App.css";
 import Header from "./Components/Header";
-import {Routes,Route} from 'react-router-dom'
+import { Routes, Route } from "react-router-dom";
 import Photos from "./Components/Photos";
 import Cart from "./Components/Cart";
-
 
 function App() {
   return (
     <>
       <Header />
-       <Routes>
+      <Routes>
         <Route path="/" element={<Photos />} />
         <Route path="/cart" element={<Cart />} />
-       </Routes>
+      </Routes>
     </>
   );
 }
